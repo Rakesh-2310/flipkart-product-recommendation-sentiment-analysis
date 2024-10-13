@@ -7,7 +7,7 @@ from io import BytesIO
 
 # Load the pickle file containing LangChain results
 try:
-    with open("D:/Rakesh/Guvi/project/flipkart/recommended_phones.pkl", 'rb') as f:
+    with open("recommended_phones.pkl", 'rb') as f:
         df = pickle.load(f)
 except FileNotFoundError:
     st.error("Pickle file not found. Please check the file path.")
